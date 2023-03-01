@@ -17,25 +17,25 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y   |  U   |  I  |  O  |  P  |  -   |
 // | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H   |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N   |  M   |  ,  |  .  |  /  | CTRL |
-//                    | ALT | LWR | GUI |   | BKSP | SPC | RSE |
+//                    | ALT | LWR | GUI |   | ENT  | SPC | RSE |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
    &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                &kp LALT &mo 1 &kp LGUI    &kp BSPC &kp SPACE &mo 2 
+                &kp LALT &mo 1 &kp LGUI    &kp ENT &kp SPACE &mo 2 
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  DEL |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | ALT |     | SPC |   | ENT | ALT |     |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |  DEL |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN  |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |      |     |     |     |      |
+//                    | ALT |     | SPC |   | ENT | BKSP | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LALT  &trans   &kp BSPC         &kp RET  &kp RALT &trans  
+                          	        &kp LALT  &trans   &kp BSPC         &kp RET  &kp BSPC  &kp RALT  
                         >;
                 };
 
