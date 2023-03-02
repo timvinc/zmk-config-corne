@@ -14,12 +14,12 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y   |  U   |  I  |  O  |  P  |  -   |
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y   |  U   |  I  |  O  |  P  | BKSP |
 // | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H   |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N   |  M   |  ,  |  .  |  /  | CTRL |
 //                    | ALT | LWR | GUI |   | ENT  | SPC | RSE |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                 &kp LALT &mo 1 &kp LGUI    &kp RET &kp SPACE &mo 2 
@@ -41,12 +41,12 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  {  |  }  |  &  |   |  ^  | "|"  |  7  |  8  |  9  |  =  |
-// | CTRL |  $  |  %  |  (  |  )  |  *  |   |  -  |  =   |  4  |  5  |  6  |  `  |
-// | SHFT |  #  |     |  [  |  ]  |     |   |  _  |  +   |  1  |  2  |  3  |  ~  |
+// |  TAB |  !  |  @  |  {  |  }  |  &  |   |  ^  | "|"  |  7  |  8  |  9  | DEL  |
+// | CTRL |  $  |  %  |  (  |  )  |  *  |   |  -  |  =   |  4  |  5  |  6  |  `   |
+// | SHFT |  #  |     |  [  |  ]  |     |   |  _  |  +   |  1  |  2  |  3  |  ~   |
 //                    | GUI | BKSP | SPC |   | ENT | ALT |    |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT    &kp LBRC &kp RBRC &kp AMPS   &kp CARET &kp PIPE  &kp N7 &kp N8 &kp N9 &kp EQUAL
+   &kp  TAB  &kp EXCL &kp AT    &kp LBRC &kp RBRC &kp AMPS   &kp CARET &kp PIPE  &kp N7 &kp N8 &kp N9 &kp DEL
    &kp LCTRL &kp DLLR &kp PRCNT &kp LPAR &kp RPAR &kp KP_MULTIPLY   &kp MINUS &kp EQUAL &kp N4 &kp N5 &kp N6 &kp GRAVE
    &kp LSHFT &kp HASH   &trans  &kp LBKT &kp RBKT &trans   &kp UNDER &kp PLUS  &kp N1        &kp N2 &kp N3 &kp TILDE
                     	     &kp LGUI &kp BSPC  &kp SPACE   &kp RET    &kp RALT &trans
